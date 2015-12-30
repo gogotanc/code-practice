@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>面板示例</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		body{padding: 60px;}
+	</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">gogotanc</a>
+				</div>
+				<div>
+					<p class="navbar-text">Samples for Panels.</p>
+				</div>
+			</nav>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h3>列表示例</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<ul class="list-group">
+						<li class="list-group-item">1</li>
+						<li class="list-group-item">1</li>
+						<li class="list-group-item">1</li>
+						<li class="list-group-item">
+							<h4 class="list-group-item-heading">标题</h4>
+							<p class="list-group-item-text">内容</p>
+						</li>
+						<li class="list-group-item">
+							1
+							<span class="badge">34</span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<div class="list-group">
+						<a href="#" class="list-group-item active">1</a>
+						<a href="#" class="list-group-item">1</a>
+						<a href="#" class="list-group-item">
+							1
+							<span class="badge">34</span>
+						</a>
+						<a href="#" class="list-group-item">1</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">小标题</h4>
+							<p class="list-group-item-text">内容</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h3>面板示例</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							基本的面板
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							不带标题的面板
+						</div>
+						<div class="panel-body">
+							基本的面板
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">有标题的面板</h4>
+						</div>
+						<div class="panel-body">
+							基本的面板
+						</div>
+						<div class="panel-footer">面板脚注</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h3>带语境色彩的面板</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">面板标题</h4>
+						</div>
+						<div class="panel-body">
+							面板内容
+						</div>
+						<div class="panel-footer">脚注颜色不会变</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class="panel-title">面板标题</h4>
+						</div>
+						<div class="panel-body">
+							面板内容
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h4 class="panel-title">面板标题</h4>
+						</div>
+						<div class="panel-body">
+							面板内容
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h4 class="panel-title">面板标题</h4>
+						</div>
+						<div class="panel-body">
+							面板内容
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h4 class="panel-title">面板标题</h4>
+						</div>
+						<div class="panel-body">
+							面板内容
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<h4 class="panel-title">面板标题</h4>
+						</div>
+						<div class="panel-body">
+							面板内容
+						</div>
+					</div>
+				</div>
+			</div>			
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h3>带控件的面板</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">带表格的面板</h4>
+						</div>
+						<div class="panel-body">
+							面板内容
+						</div>
+						<table class="table">
+							<thead>
+								<th>姓名</th>
+								<th>年龄</th>
+							</thead>
+							<tbody>
+								<tr><td>tanc</td><td>24</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h4 class="panel-title">带列表的面板</h4>
+						</div>
+						<div class="panel-body">
+							<p>这是一些内容。这是一些内容。这是一些内容。这是一些内容。这是一些内容。</p>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">1111</li>
+							<li class="list-group-item">1111</li>
+							<li class="list-group-item">1111</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h3>Well</h3>
+						<small>Well 是一种会引起内容凹陷显示或插图效果的容器 div。</small>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="well">我在well中。</div>
+				</div>
+				<div class="col-md-4">
+					<div class="well well-lg">我在大well中。</div>
+				</div>
+				<div class="col-md-4">
+					<div class="well well-sm">我在小well中。</div>
+				</div>
+			</div>
+
+
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

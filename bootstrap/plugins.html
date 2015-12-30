@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>插件示例</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		body{padding: 60px;}
+	</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">gogotanc</a>
+				</div>
+				<div>
+					<p class="navbar-text">Samples for plugins.</p>
+				</div>
+			</nav>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h3>模态框（Modal）插件</h3>
+						<small>
+						模态框（Modal）是覆盖在父窗体上的子窗体。通常，目的是显示来自一个单独的源的内容，可以在不离开父窗体的情况下有一些互动。子窗体可提供信息、交互等。
+						</small>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="btn-group">
+						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+							演示模态框
+						</button>
+						<button class="btn btn-primary" id="btn1">
+							js演示模态框
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h3>下拉菜单</h3>
+						<small>
+						演示下拉菜单（Dropdown）插件方法的用法。
+						</small>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+							<a href="#" class="navbar-brand">gogotanc</a>
+						</div>
+						<div>
+							<ul class="nav navbar-nav">
+								<li><a href="#" class="active">IOS</a></li>
+								<li><a href="#">Android</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										Java
+										<!-- 这个b标签是图标 -->
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">1</a></li>
+										<li class="divider"></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">1</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h3>滚动监听（Scrollspy）插件</h3>
+						<small>
+						滚动监听（Scrollspy）插件，即自动更新导航插件，会根据滚动条的位置自动更新对应的导航目标。其基本的实现是随着您的滚动，基于滚动条的位置向导航栏添加 .active class。
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 模态框定义的地方，刚开始的时候是隐藏的 -->
+		<div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">模态框标题</h4>
+					</div>
+					<div class="modal-body">一些内容</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button class="btn btn-primary">确定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+			// 模态框
+			$("#btn1").click(function(){
+				$("#myModal").modal("toggle");
+			});
+			$("#myModal").on('hidden.bs.modal', function(){
+				alert("hidden");
+			});
+			// 下拉菜单
+			$(".dropdown-toggle").dropdown("toggle");
+    </script>
+	</body>
+</html>

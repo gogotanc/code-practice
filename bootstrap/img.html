@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>图片示例</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    body{padding: 60px;}
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">gogotanc</a>
+          </div>
+          <div>
+            <p class="navbar-text">Samples for image.</p>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="page-header">
+          <h1>图片显示</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <img src="img/001.png" class="img-rounded">
+        </div>
+        <div class="col-md-3">
+          <img src="img/002.png" class="img-circle">
+        </div>
+        <div class="col-md-3">
+          <img src="img/003.png" class="img-thumbnail">
+        </div>
+        <div class="col-md-3">
+          <img src="img/003.jpg" class="img-responsive">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="page-header">
+          <h1>缩略图</h1>
+          <small>子标题</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="img/004.png" alt="通用的占位符缩略图"/>
+          </a>
+        </div>
+        <!-- 添加自定义的内容 -->
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="img/004.png" alt="通用的占位符缩略图"/>
+          </div>
+          <div class="caption">
+            <h3>示例</h3>
+            <a href="#" class="btn btn-primary" role="button">查看</a>
+            <a href="#" class="btn btn-default" role="button">详情</a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
