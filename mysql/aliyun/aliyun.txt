@@ -1,0 +1,12 @@
+#设置远程mysql访问
+
+mysql -h localhost -u root -p
+
+GRANT ALL PRIVILEGES　ON *.* TO 'root'@'%' IDENTIFIED BY 'gogotanc' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+
+#阿里云ip
+
+121.42.172.30
