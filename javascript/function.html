@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-2.1.14-min.js"></script>
+</head>
+
+<body>
+<h2>This is a heading</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<button type="button">Click me</button>
+</body>
+
+<script type="text/javascript">
+(function(window){
+	// 此区域不会污染全局作用域
+	$("button").click(function(){
+		alert("ok");
+	});
+
+	var window = 10;
+	alert(window);
+
+})(window);
+</script>
+
+</html> 
