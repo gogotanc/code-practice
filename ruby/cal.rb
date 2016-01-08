@@ -5,7 +5,7 @@ puts "input a symbol"
 symbol = gets
 puts "input another num"
 num2 = gets
-result = case symbol.chomp # chomp去除最后的\t\n
+result = case symbol.chomp # chomp闄ゅ幓杈撳叆鏈�鍚庣殑\t\n
   when "+" then num1.to_i + num2.to_i
   when '-' then num1.to_i - num2.to_i
   when '*' then num1.to_i * num2.to_i
