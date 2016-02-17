@@ -14,14 +14,14 @@ public class HttpServer {
 		Request request = null;
 
 		try {
-			
+
 			server = new ServerSocket(8080, 0, InetAddress.getByName("127.0.0.1"));
 			//server = new ServerSocket(8080);
 			socket = server.accept();
 
 			request = new Request(socket.getInputStream());
-			
-		
+
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally{

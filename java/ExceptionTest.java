@@ -9,11 +9,11 @@ public class ExceptionTest{
 			System.out.println("Catch it");
 		}
 	}
-	
+
 	public static void f() throws SimpleException{
 		System.out.println("f() throws a simpleexception.");
 		throw new SimpleException("hahahahhaha");
-	} 
+	}
 }
 
 class SimpleException extends Exception{
