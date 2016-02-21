@@ -43,3 +43,9 @@ http://apache.opencas.org/tomcat/tomcat-8/v8.0.32/bin/apache-tomcat-8.0.32.tar.g
 
 ### Install Maven
 - wget http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+
+### Install git
+
+
+### Download Jenkins
+- wget http://ftp.tsukuba.wide.ad.jp/software/jenkins/war/1.648/jenkins.war
