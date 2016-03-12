@@ -37,9 +37,10 @@
   export JAVA_HOME CLASSPATH PATH
 
 ### Install Tomcat
-- wget http://www.us.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apache-tomcat-8.0.32.tar.gz
-http://apache.opencas.org/tomcat/tomcat-8/v8.0.32/bin/apache-tomcat-8.0.32.tar.gz
-- cd /usr/local/tomcat8
+```
+wget http://www.us.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apache-tomcat-8.0.32.tar.gz
+cd /usr/local/tomcat8
+```
 
 ### Install Maven
 - wget http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
