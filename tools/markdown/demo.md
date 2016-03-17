@@ -25,16 +25,20 @@
 
 	public void main(){}
 
+
 ## 链接
 google's website is [www.google.com](http://www.google.com).  
 一般链接：  
 <http://www.google.com/>
+
 ## 强调
 **MARKDOWN** 使用星号 * 或者 _ 作为标记强调字符的符号，例如：  
 *hello world*  
 **hello markdown**  
 _hello markdown_  
+
 ## 图片
-![lalala](img/001.jpg)
+![lalala](img/girl.jpg)
+
 ## 反斜杠
 \` \*
