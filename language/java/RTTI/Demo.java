@@ -8,7 +8,7 @@ public class Demo{
 		}
 		show(c);
 	}
-	
+
 	public static void show(Class c){
 		System.out.println(c.getName());
 		Class cc = c.getSuperclass();

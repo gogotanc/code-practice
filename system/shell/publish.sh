@@ -1,4 +1,5 @@
 #!/bin/sh
+#发布tanc-webdemo的脚本
 TOMCAT_HOME = /usr/local/tomcat7
 PROJECT_HOME = "$TOMCAT_HOME"/webapps
 TARGET_WAR = /root/tanc-webdemo.war

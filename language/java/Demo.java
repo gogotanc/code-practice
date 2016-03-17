@@ -17,11 +17,11 @@ public class Demo{
 }
 
 class Cycle{
-	
+
 	private void show(){
 		System.out.println("Cycle show");
 	}
-	
+
 	public void ride(){
 		System.out.println("Cycle ride");
 	}
@@ -34,7 +34,7 @@ class Bicycle extends Cycle{
 }
 
 class Unicycle extends Cycle{
-	
+
 }
 
 class Tricycle extends Cycle{

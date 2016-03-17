@@ -12,11 +12,11 @@ public class ConnectionManager{
 
 class Connection{
 	private Connection(){}
-	
+
 	protected static Connection getInstance(){
 		return new Connection();
 	}
-	
+
 	public void show(){
 		System.out.println("connected");
 	}

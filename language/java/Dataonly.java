@@ -10,13 +10,13 @@ public class Dataonly{
 	long l;
 	boolean boo;
 	static int data = 46;
-	
+
 	public static void main(String[] args){
-		
+
 		int i = 0;
 		int j = 100;
 		int l = 100;
-		
+
 		outer:
 		while(true){
 			System.out.println("outer while loop");
@@ -32,27 +32,27 @@ public class Dataonly{
 				}
 			}
 		}
-		
-		
+
+
 /* 		Dataonly data = new Dataonly();
 		Dataonly data1 = new Dataonly();
-		
+
 		System.out.println(System.getProperty("user.name"));
-		
+
 		Random random = new Random();
 		int i = random.nextInt(100);
 		System.out.println(i);
 		i = random.nextInt(100);
 		System.out.println(i);
-		
+
 		int d = 0x2f;
 		System.out.println(d);
 		System.out.println(Integer.toBinaryString(d)); */
-		/* 
+		/*
 		System.out.println(data.data);
 		data1.data++;
 		System.out.println(Dataonly.data); */
-		/* 		
+		/*
 		int iii;
 		System.out.println(iii);
 		System.out.println(data.i);
