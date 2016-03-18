@@ -1,21 +1,23 @@
 # Configuration for CentOS
+使用 `CentOS` 时使用到的一些命令和工具。
 
-
-### CentOS 7 static IP settings
+### 虚拟机使用时，设置静态IP
 - cd /etc/sysconfig/network-scripts/
 - cp ifcfg-enp0s3 ifcfg-enp0s8
 - vi ifcfg-enp0s8
-> DEVICE="enp0s8"  
-  BOOTPROTO=static  
-  TYPE=Ethernet  
-  NAME="enp0s8"  
-  BROADCAST=192.168.1.255  
-  IPADDR=192.168.1.123  
-  IPV6INIT=yes  
-  IPV6_AUTOCONF=yes  
-  NETMASK=255.255.255.0  
-  NETWORK=192.168.1.1  
-  ONBOOT=yes  
+```
+DEVICE="enp0s8"  
+BOOTPROTO=static  
+TYPE=Ethernet  
+NAME="enp0s8"  
+BROADCAST=192.168.1.255  
+IPADDR=192.168.1.123  
+IPV6INIT=yes  
+IPV6_AUTOCONF=yes  
+NETMASK=255.255.255.0  
+NETWORK=192.168.1.1  
+ONBOOT=yes  
+```
 - systemctl restart network.service
 
 ### CentOS INSTALL JDK

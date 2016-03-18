@@ -10,12 +10,12 @@ public class HttpServer {
 
 	public static void main(String[] args) {
 		try {
-			
+
 			server = new ServerSocket(8080, 0, InetAddress.getByName("127.0.0.1"));
 			//server = new ServerSocket(8080);
 			while(true){
 				socket = server.accept();
-				
+
 				new Thread(new Runnable(){
 					public void run(){
 						try{
@@ -30,7 +30,7 @@ public class HttpServer {
 				}).start();
 			}
 
-			
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally{

@@ -1,11 +1,11 @@
-/* 
+/*
 import java.io.*;
 
 public class Demo2{
 	public static void main(String[] args) throws Exception{
-		
+
 	}
-} 
+}
 */
 import java.io.*;
 import java.util.*;

@@ -1,11 +1,11 @@
-/* 
+/*
 import java.io.*;
 
 public class Demo2{
 	public static void main(String[] args) throws Exception{
-		
+
 	}
-} 
+}
 */
 import java.util.*;
 
@@ -17,7 +17,7 @@ public class Demo3{
 
 		String str = in.nextLine();
 		String[] highs = str.split(" ");
-		
+
 		for(String s : highs)
 		{
 			int i = Integer.parseInt(s);
@@ -25,9 +25,9 @@ public class Demo3{
 		}
 
 		System.out.println(sum);
-		
+
 	}
-	
+
 	public static int f(int h)
 	{
 		return 2*h;

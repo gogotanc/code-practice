@@ -25,6 +25,9 @@
 `ctrl` + `alt` + `x`
 > 打开markdown的预览
 
+`ctrl` + `alt` + `f`
+> 格式化js代码
+
 ###　Sublime Text 相关
 `Ctrl` + `Shift` + `P`
 > 打开命令面板

@@ -4,7 +4,7 @@ public class Demo{
 	public static void main(String[] args) throws Exception{
 		System.out.println(read("Demo.java"));
 	}
-	
+
 	public static String read(String name) throws Exception{
 		BufferedReader reader = new BufferedReader(new FileReader(name));
 		StringBuilder buf = new StringBuilder();

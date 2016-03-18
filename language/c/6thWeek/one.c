@@ -12,15 +12,15 @@ int parse(long);
 int main()
 {
 	long n;
-	
+
 	scanf("%ld", &n);
-	
+
 	long d = jiecheng(n);
-	
+
 	printf("%ld...\n", d);
-	
+
 	int result = parse(d);
-	
+
 	printf("%d...\n", result);
 }
 
@@ -33,10 +33,10 @@ long jiecheng(long n)
 
 int parse(long data)
 {
-	
+
 	long a = 10;
 	int result = 0;
-	
+
 	while(1)
 	{
 		if((data%a)!=0)

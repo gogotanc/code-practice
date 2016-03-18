@@ -2,21 +2,21 @@ import java.net.*;
 import java.io.*;
 
 public class Request{
-	
+
 	private InputStream in;
 	private byte[] buf = new byte[2048];
 	private StringBuffer context;
-	
+
 	public Request(InputStream in){
 		this.in = in;
 		context = new StringBuffer();
 	}
-	
+
 	public void parse(){
 		init();
 		System.out.println(context.toString());
 	}
-	
+
 	public void init(){
 		try{
 			int len = in.read(buf);

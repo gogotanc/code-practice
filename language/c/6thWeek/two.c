@@ -6,16 +6,16 @@
 
 #include<stdio.h>
 #include <string.h>
- 
+
 int main()
 {
 	char c[255];
 	int count[] = {0, 0, 0};
-	
+
 	scanf("%s", &c);
-	
+
 	int len = strlen(c);
-	
+
 	for(int i=0; i<len; i++)
 	{
 		switch(c[i])
@@ -37,39 +37,39 @@ int main()
 				break;
 			case '}':
 				if(count[1]>0)
-					count[1]--;	
+					count[1]--;
 				else
 				{
 					printf("input invalid");
 					return 0;
-				}				
+				}
 				break;
 			case '[':
 				count[2]++;
 				break;
 			case ']':
 				if(count[2]>0)
-					count[2]--;	
+					count[2]--;
 				else
 				{
 					printf("input invalid");
 					return 0;
-				}				
+				}
 				break;
 		}
 	}
-	
+
 	int result = 0;
-	
+
 	for(int i=0; i<3; i++)
 	{
 		result += count[i];
 	}
-	
+
 	if(result == 0)
 		printf("input valid");
 	else
 		printf("input invalid");
-	
+
 	return 0;
 }
