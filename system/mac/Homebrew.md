@@ -46,6 +46,9 @@ $ brew tap phinze/homebrew-cask && brew install brew-cask
 ```
 brew cask install XXX
 ```
-
+卸载应用时，输入
+```
+brew cask uninstall XXX
+```
 
 
