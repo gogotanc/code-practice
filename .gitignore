@@ -80,3 +80,6 @@ buildNumber.properties
 
 # Debug files
 *.dSYM/
+
+# Mac OS X
+.DS_Store
