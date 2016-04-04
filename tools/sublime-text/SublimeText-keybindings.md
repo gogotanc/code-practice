@@ -15,6 +15,18 @@
 `ctrl` + `shift` + `↑`或`↓`
 > 上下移动行
 
+`ctrl` + `d` 或 `command` + `d`
+> 多行游标
+
+`ctrl` + `k` 或 `command` + `k`
+> 多行游标选择时跳过一个匹配
+
+`ctrl` + `enter` 或 `command` + `enter`
+> 下一行输入
+
+`ctrl` + `shift` + `enter` 或 `command` + `shift` + `enter`
+> 上一行输入
+
 ### 插件相关
 `ctrl` + `alt` + `o`
 > 高亮显示多余空格和tab
