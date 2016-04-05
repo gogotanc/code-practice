@@ -27,6 +27,9 @@
 `ctrl` + `shift` + `enter` 或 `command` + `shift` + `enter`
 > 上一行输入
 
+`ctrl` + `p` or `command` + `p`
+> goto anything
+
 ### 插件相关
 `ctrl` + `alt` + `o`
 > 高亮显示多余空格和tab
