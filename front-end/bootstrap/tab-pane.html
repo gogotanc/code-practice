@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello World</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div>
+
+  <!-- Nav tabs --> 
+  <ul class="nav nav-tabs" role="tablist" id="myTabs">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">1</div>
+    <div role="tabpanel" class="tab-pane" id="profile">2</div>
+    <div role="tabpanel" class="tab-pane" id="messages">3</div>
+    <div role="tabpanel" class="tab-pane" id="settings">4</div>
+  </div>
+
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(function(){
+    $('#myTabs li:eq(1) a').tab('show');
+});
+</script>
+
+</body>
+</html>
