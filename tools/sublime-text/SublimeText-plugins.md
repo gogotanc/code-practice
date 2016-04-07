@@ -30,3 +30,26 @@ OmniMarkupPreviewer 用来预览 `Markdown` 编辑的效果，还可以生成 `h
     { "keys": ["ctrl+alt+o"], "command": "toggle_trailing_spaces" }
 ]
 ```
+
+## Emmet
+Emmet 的工作流程：打开 HTML 或 CSS 文件->按语法编写指令->摁下 TAB 键->生成！
+> 输入 ! 或 html:5
+
+```
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    < title>Document</title>
+</head>
+<body>
+</body>
+</html>
+```
+[Emmet API](http://docs.emmet.io/cheat-sheet/)
+
+## SideBarEnhancements
+边栏右键增强插件。
+
+## DocBlockr
+注释插件

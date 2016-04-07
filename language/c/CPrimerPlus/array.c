@@ -1,9 +1,9 @@
 #include <stdio.h>
-/*
-
-Êı×éÃûÎªµØÖ·
-
-*/
+/**
+ * æ•°ç»„æ±‚å’Œ
+ * @param  arr æ±‚å’Œçš„æ•°ç»„
+ * @return     æ•°ç»„å’Œ
+ */
 int sum(int *arr);
 
 int main(void)

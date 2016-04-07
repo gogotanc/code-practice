@@ -11,11 +11,3 @@
 > 121.42.172.30
 - 内网IP
 > 10.251.37.90
-
-### 公司主机
-- 活动相关
-> tj1.mingdianjie.com  
-> tj2.mingdianjie.com  
-> mtj.mingdianjie.com  
-- 公司主页
-> www.mingdianjie.com
