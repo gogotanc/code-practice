@@ -11,7 +11,7 @@
 ## 标签
 **markdown** 标记行内代码使用反引号\`,比如：  
 使用`public`
-```
+```html
 <html>
 	<h1>test</h1>
 </html>
@@ -42,3 +42,52 @@ _hello markdown_
 
 ## 反斜杠
 \` \*
+
+## 测试
+
+```java  
+public class Test {
+    public static void main(String[] args) {
+        System.out.println("hello world!");
+    } 
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+```c
+#include<stdio.h>
+
+int main() 
+{
+    int i = 0;
+}
+```
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+
+Option name         | Markup           | Result if enabled     
+--------------------|------------------|-----------------------
+Intra-word emphasis | So A\*maz\*ing   | So A<em>maz</em>ing   
+Strikethrough       | \~~Much wow\~~   | <del>Much wow</del>   
+Underline [^under]  | \_So doge\_      | <u>So doge</u>        
+Quote [^quote]      | \"Such editor\"  | <q>Such editor</q>    
+Highlight           | \==So good\==    | <mark>So good</mark>  
+Superscript         | hoge\^(fuga)     | hoge<sup>fuga</sup>   
+Autolink            | http://t.co      | <http://t.co>         
+Footnotes           | [\^4] and [\^4]: | [^4] and footnote 4   
