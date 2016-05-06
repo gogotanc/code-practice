@@ -35,12 +35,12 @@ OmniMarkupPreviewer 用来预览 `Markdown` 编辑的效果，还可以生成 `h
 Emmet 的工作流程：打开 HTML 或 CSS 文件->按语法编写指令->摁下 TAB 键->生成！
 > 输入 ! 或 html:5
 
-```
+```html
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    < title>Document</title>
+    <title>Document</title>
 </head>
 <body>
 </body>
@@ -53,3 +53,39 @@ Emmet 的工作流程：打开 HTML 或 CSS 文件->按语法编写指令->摁�
 
 ## DocBlockr
 注释插件
+
+## PreDawn
+主题插件，效果图如下：
+![img](img/predawn.png)
+直接使用 `Package Control` 安装。设置如下，在 `Settings-User` 下面添加如下内容：
+```
+// Panel Options
+"predawn_findreplace_small": false,
+"predawn_quick_panel_small": false,
+
+// Sidebar Options
+"predawn_sidebar_arrows": false,
+"predawn_sidebar_large": false,
+"predawn_sidebar_medium": false,
+"predawn_sidebar_narrow": false,
+"predawn_sidebar_small": false,
+"predawn_sidebar_xlarge": false,
+"predawn_sidebar_xsmall": false,
+
+// Tabs Options
+
+"predawn_tabs_active_underline": false,
+"predawn_tabs_large": false,
+"predawn_tabs_medium": false,
+"predawn_tabs_small": false
+```
+
+## MarkdownLight
+`Markdown` 文件使用了该插件显示 `Dark` 主题，下过图如下：
+![markdownlight](img/markdownlight.png)
+设置：在 `Settings` — `More` → `Syntax Specific` — `User`. 添加如下的内容：
+```
+{
+    "color_scheme": "Packages/MarkdownLight/MarkdownDark.tmTheme"
+}
+```
