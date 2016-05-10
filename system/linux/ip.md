@@ -2,8 +2,10 @@
 下面列举几个在 `Linux` 系统中配置 `IP` 地址的方法。
 
 ### ifconfig 命令临时配置 IP 地址
+
 `ifconfig` = 查看与配置网络状态
-```
+
+```shell
 # 临时设置eth0网卡的IP地址与子网掩码
 $ ifconfig eth0 192.168.0.200 netmask 255.255.255.0
 ```
@@ -12,8 +14,10 @@ $ ifconfig eth0 192.168.0.200 netmask 255.255.255.0
 红帽专有图形化工具 `setup` 设置 `IP` 地址。
 
 ### 修改网络配置文件 （常用）
+
 - 网卡信息文件  
-```
+
+```shell
 # /etc/sysconfig/network-scripts/ifcfg-eth0
 
 # 网卡设备名
@@ -33,7 +37,8 @@ GATEWAY='10.104.64.1'
 ```
 
 虚拟机中配置静态 IP
-```
+
+```shell
 $ cd /etc/sysconfig/network-scripts/
 $ cp ifcfg-enp0s3 ifcfg-enp0s8
 $ vi ifcfg-enp0s8
@@ -55,18 +60,21 @@ $ systemctl restart network.service
 ```
 
 - 主机名文件  
+
 `hostname` = 查看与配置主机名
-```
+
+```shell
 # /etc/sysconfig/network
 
-[root@VM_80_179_centos ~]# hostname host
-[root@VM_80_179_centos ~]# hostname
+[root@VM_80_179_centos ~]$ hostname host
+[root@VM_80_179_centos ~]$ hostname
 host
-[root@host ~]#
+[root@host ~]$ 
 ```
 
 - DNS 配置文件
-```
+
+```shell
 # /etc/resolv.conf
 
 ameserver 10.225.30.181
