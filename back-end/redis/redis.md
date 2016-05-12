@@ -12,6 +12,10 @@ $ make
 $ make install
 ```
 
+3.2 特性
+
+`GEO` 地理信息数据结构。
+
 ## redis 的启动
 
 ### 动态方式
