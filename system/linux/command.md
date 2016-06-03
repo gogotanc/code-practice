@@ -43,3 +43,17 @@ $ scp ~/redis.conf root@127.0.0.1:/usr/local/redis/redis.conf
 # 显示当前文件夹大小
 $ du -sh
 ```
+
+### 树形显示文件夹结构 tree
+
+`mac os` 默认没有安装这个命令，使用下面的命令进行安装：
+
+```shell
+$ brew install tree
+```
+
+```shell
+# 树形显示当前文件夹的结构。
+$ tree
+```
+
