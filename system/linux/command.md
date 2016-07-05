@@ -57,3 +57,10 @@ $ brew install tree
 $ tree
 ```
 
+### 查看硬盘使用情况 df
+
+可以查看各个硬盘分区的使用情况。
+
+```shell
+$ df
+```
