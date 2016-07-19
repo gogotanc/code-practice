@@ -6,6 +6,8 @@ syntax on
 
 " 设置行号
 set nu!
+" 设置相对行号
+set relativenumber
 
 " 自动缩进
 set autoindent
