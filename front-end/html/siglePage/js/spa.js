@@ -32,36 +32,9 @@ var spa = (function () {
 		return false;
 	};
 
-	// Event handler /onClickSlider/
-	// receices click event and calls toggleSlider
-	onClickSlider = function ( event ) {
-		toggleSlider();
-		return false;
+	initModule = function ( $container ) {
+		spa.shell.initModule( $container );
 	};
 
-	// Public method /initModule/
-	// sets nitial state and provides feature
-	// initModule = function ( $container ) {
-	// 	// render HTML
-	// 	$container.html( configMaps.template_html );
-
-	// 	$chatSlider = $container.find( '.spa-slider' );
-	// 	// initialize slider height and title
-	// 	// bind the user click event to the event handler
-	// 	$chatSlider
-	// 		.attr( 'title', configMaps.retracted_title )
-	// 		.click( onClickSlider )
-	// 	return true;
-	// };
-	
-	initModule = function ( $container ) {
-		// $container.html(
-		// 	'<h1 style="display:inline-block; margin:25px;">'
-		// 	+ 'hello world'
-		// 	+ '</h1>'
-		// );
-		spa.shell.initModule( $container );
-	}
-
-	return { initModule : initModule}
+	return { initModule : initModule};
 }());
