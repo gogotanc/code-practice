@@ -1,0 +1,55 @@
+.todo-main {
+	background-color: #888;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.todo-main-head {}
+
+.todo-main-input {
+	height: 36px;
+	width: 400px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #444;
+	background:#ccc;
+	margin: 0 auto;
+	padding:10px 15px;
+	border:0 none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.todo-main-list {
+	text-align: center;
+}
+
+.todo-main-item {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 36px;
+	width: 400px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	text-align: center;
+	background: #aaa;
+}
+
+.todo-main-item-input {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border: 1px solid #333;
+}
+
+.todo-main-item-content {}
+
+.todo-main-item-close {
+	position: absolute;
+	right: 10px;
+	bottom: 8px;
+	cursor: pointer;
+}
