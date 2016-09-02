@@ -64,3 +64,34 @@ $ tree
 ```shell
 $ df
 ```
+
+
+### 端口使用
+
+查看某个端口是否开启
+
+```shell
+$ lsof -i:80
+```
+
+列出所有端口
+
+```shell
+$ netstat -ntlp
+```
+
+开启端口
+
+```shell
+# 修改文件
+$ vim /etc/sysconfig/iptables
+
+# 重启防火墙
+$ service iptables restart
+```
+
+文件修改内容：
+
+```
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
+```
