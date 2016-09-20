@@ -60,7 +60,7 @@ $ mongod --config /usr/local/etc/mongod.conf
 $ mongo
 ```
 
-输入 help，就可以看到相关命令的使用说明了。
+输入 `help`，就可以看到相关命令的使用说明了。
 
 ```shell
 > help
