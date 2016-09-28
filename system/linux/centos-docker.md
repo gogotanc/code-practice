@@ -46,13 +46,13 @@ $ sudo systemctl daemon-reload
 $ sudo service docker restart
 ```
 
-## denglu aliyun
+## 登陆 阿里云仓库
 
 ```shell
 $ docker login -u sample@aliyun.com -p password -e sample.aliyun.com registry.aliyuncs.com
 ```
 
-shangmian de zhanghao mima wei denglu aliyun kongzhitai d zhanghao mima
+> 上面的账号密码为登陆阿里云控制台的账号和密码。
 
 ## 安装 Compose
 
