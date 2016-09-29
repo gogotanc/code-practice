@@ -32,7 +32,7 @@ $ service docker start
 
 ## 配置阿里云镜像加速
 
-配置Docker加速器
+配置 `Docker` 加速器
 
 ```shell
 # 您可以使用如下的脚本将mirror的配置添加到docker daemon的启动参数中。
@@ -54,22 +54,17 @@ $ docker login -u sample@aliyun.com -p password -e sample.aliyun.com registry.al
 
 > 上面的账号密码为登陆阿里云控制台的账号和密码。
 
-## 安装 Compose
+## 安装 docker-compose
 
-运行下边的命令来安装 Compose：
+运行下边的命令来安装 `docker-compose`：
 
 ```shell
-$ curl -L https://github.com/docker/compose/releases/download/1.3.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+$ curl -L https://github.com/docker/compose/releases/download/1.8.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 $ chmod +x /usr/local/bin/docker-compose
 ```
 
-> 注意：如果你在安装的时候出现了 “Permission denied” 的错误信息，这说明你的 /usr/local/bin 目录是不可写的，你需要使用超级用户来安装。运行 sudo -i , 然后运行上边的两个命令，然后 exit 退出。
-可选，你也可以在 shell 中使用命令行安装。
+安装好后使用 `docker-compose --version` 查看是否正确安装。
 
-`Compose` 适用于 `OS X` 和 64位的 `Linux` 。 如果你使用其他平台，你可以安装一个 `Compose` 的 `Python` 包来完成安装。
-
-```shell
-$ sudo pip install -U docker-compose
-```
-
-到这里安装就结束了。`Compose` 已经安装完成。你可以使用 `docker-compose --version` 来进行测试 。
+参考：
+- [https://github.com/docker/compose/releases](https://github.com/docker/compose/releases)
+- [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
