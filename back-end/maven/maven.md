@@ -25,3 +25,13 @@ $ mvn archetype:generate
 ```
 
 需要稍等下，然后会让你选择和填写相关项目信息，如 `groupId`、`DartifactId` 和版本号之类的,主要是 `archetypeAritifactId` 要选择 `webapp`。
+
+### 跳过测试的命令
+
+使用如下命令进行打包，可以跳过测试阶段。
+
+```shell
+$ mvn package -Dmaven.test.skip=true
+```
+
+离线打包的时候，有些测试是需要网络连接，于是不能通过，这时就可以使用这个命令。
