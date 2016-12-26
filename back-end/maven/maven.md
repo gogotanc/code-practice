@@ -35,3 +35,15 @@ $ mvn package -Dmaven.test.skip=true
 ```
 
 离线打包的时候，有些测试是需要网络连接，于是不能通过，这时就可以使用这个命令。
+
+### 解决构建项目骨架速度奇慢的问题
+
+maven 骨架生成项目速度慢的令人发指，都在 Generating project in Batch mode 等待，Idea 状态显示栏还在不行 running，并没有卡死。查看 debug 信息发现，是 maven 获取 archetype-catalog.xml 导致。
+
+```
+-DarchetypeCatalog=internal
+```
+
+加上-DarchetypeCatalog=internal 运行参数，archetype-catalog.xml本地获取。
+
+对于intellij idea可以在 Runner 加上该参数。
